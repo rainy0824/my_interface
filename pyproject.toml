@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "my_interface"
+version = "0.1.0"
+description = "api test"
+authors = ["evan"]
+license = "apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pytest = "^6.2.2"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+coverage = "^5.5"
+coveralls = "^3.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+default = true
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
